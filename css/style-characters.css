@@ -1,0 +1,690 @@
+@font-face{
+	font-family: myfont;
+	src: url(/assets/genshin-font.ttf);
+}
+html{
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+#char-page{
+	text-shadow: 
+    0 0 15px #8eceff,
+  0 0 6px #33b9f8,
+  0 0 3px #26b6f9;	
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+input{
+    display: none;
+}
+.village-container{
+    position: relative;
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.mondstadt-container{
+    top: 0;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    transition: 1.5s;
+}
+.liyue-container{
+    top: 0;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    transition: 1.5s;
+}
+.inazuma-container{
+    top: 0;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    transition: 1.5s;
+}
+.sumeru-container{
+    top: 0;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    transition: 1.5s;
+}
+.village-background{
+    filter: blur(5px);
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    z-index: -99;
+}
+.village-navigation{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    margin-top: -70vh;
+    left: 5vh;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+}
+.nextprev{
+    display: none;
+}
+.village-bar{
+    margin: 5px 10px;
+    width: auto;
+    height: 25%;
+    display: flex;
+}
+.village-list-style{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+}
+.village-name{
+    font-family: myfont;
+    color: white;
+    text-shadow:
+        0 0 1px #000000,
+        0 0 5px #0000,
+        0 0 10px #5a5a5a;	
+    font-size: 2.5vh;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+}
+.village-name:hover{
+    opacity: 0.7;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#vlabel-1 .village-name:hover{
+    text-shadow:
+        0 0 5px #03fec8,
+        0 0 10px #27f7ca,
+        0 0 15px #4afdd6,
+        0 0 20px #67fada,
+        0 0 25px #9cf9e5;	
+}
+#vlabel-2 .village-name:hover{
+    text-shadow:
+        0 0 5px #ffee00,
+        0 0 10px #feee18,
+        0 0 15px #fdf143,
+        0 0 20px #fdf36d,
+        0 0 25px #fff89b;	
+}
+#vlabel-3 .village-name:hover{
+    text-shadow:
+        0 0 5px #7406fa,
+        0 0 10px #8423fb,
+        0 0 15px #9847fb,
+        0 0 20px #a45bfd,
+        0 0 25px #c294f9;	
+}
+#vlabel-4 .village-name:hover{
+    text-shadow:
+        0 0 5px #00c013,
+        0 0 10px #19c12a,
+        0 0 15px #33be40,
+        0 0 20px #4dc258,
+        0 0 25px #76b77d;	
+}
+.char-description{
+    margin-right: 20vw;
+    margin-left: -15vw;
+    height: fit-content;
+    width: fit-content; 
+}
+.char-name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15vh;
+    margin-top: 10vh;
+    margin-left: -20vw;
+    font-style: italic;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-text-stroke: 0.1vh white;
+}
+.elements{
+    position: absolute;
+    width: 15vw;
+    opacity: 0.2;
+    margin-top: -30vh;
+    margin-left: 20vw;
+}
+.char-detail{
+    padding: 3vh;
+    width: 60%;
+    margin-left: 30%;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow:  0px 1px 3px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: justify;
+    font-size: 3vh;
+}
+.char-image{
+    position: relative;
+    height: 150vh;
+    margin-top: 0;
+    margin-left: 20vw;
+    top: 0;
+    right: 0;
+ }
+.characters-slides{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+    z-index: -5;
+}
+
+.mondstadt-characters{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+}
+#jean{
+    visibility: visible;
+}
+#jean .char-description{
+    margin-left: -4vw;
+}
+#jean .char-name{
+    margin-left: 13vw;
+    font-size: 9vh;
+}
+#jean .char-detail{
+    width: 65%;
+    margin-left: 13vw;
+}
+#jean .char-image{
+    margin-left: 15vw;
+}
+#eula{
+    margin-left: -10vw;
+}
+#eula .char-image{
+    margin-top: -20vh;
+    height: 165vh;
+}
+#eula .char-description{
+    margin-left: -9vw;
+}
+#eula .char-name{
+    margin-left: 10vw;
+    font-size: 9vh
+}
+#eula .char-detail{
+    margin-left: 10vw;
+    width: 70%;
+}
+#eula .elements{
+    margin-left: 16vw;
+
+}
+#diluc{
+    margin-left: -10vw;
+}
+#diluc .char-image{
+    margin-left: 30vw;
+}
+#diluc .char-description{
+    margin-left: -3.5vw;   
+}
+#diluc .char-name{
+    margin-left: 15vw;
+    font-size: 10vh;
+}
+#diluc .char-detail{
+    margin-left: 15vw;
+}
+#diluc .elements{
+    margin-left: 22vw;
+}
+#venti .char-image{
+    margin-left: 15vw;
+}
+#venti .char-description{
+    margin-left: 8vw;
+}
+#venti .char-name{
+    font-size: 9vh;
+    margin-left: -5vw;
+}
+#venti .char-detail{
+    margin-top: 2vh;
+    margin-left: -5vw;
+    width: 110%;
+}
+#venti .elements{
+    margin-left: 2vw;
+}
+.village-char-navigation{
+    width: 30vw;
+    margin-left: 65vw;
+    right: 5vw;
+    margin-top: -30vh;
+    display: flex;
+    z-index: 100;
+}
+.mond-char-label{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mond-char-label img{
+    width: 80%;
+}
+#mond-char-1:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#mond-char-2:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#mond-char-3:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#mond-char-4:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*liyue container*/
+.liyue-characters{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.liyue-characters .char-name{
+    margin-top: 5vh;
+}
+#xiao{
+    margin-left: -10vw;
+}
+#xiao .char-name{
+    margin-left: 15vw;
+    font-size: 13vh;
+}
+#xiao .char-detail{
+    width: 60%;
+    font-size: 2.7vh;
+    margin-left: 16vw;
+}
+#xiao .elements{
+    margin-left: 23vw;
+}
+#hutao{
+    margin-left: -10vw;
+}
+#hutao .char-name{
+    margin-left: 10vw;
+}
+#hutao .char-description{
+    margin-top: 5vh;
+    margin-left: -10vw;
+}
+#hutao .elements{
+    margin-top: -28vh;
+}
+#hutao .char-detail{
+    width: 70%;
+    margin-top: 7vh;
+    margin-left: 10vw;
+}
+#hutao .elements{
+    margin-top: -25vh;
+    margin-left: 16vw;
+}
+#zhongli{
+    margin-left: -15vw;
+}
+#zhongli .char-name{
+    margin-left: 10vw;
+    font-size: 10vh;
+}
+#zhongli .char-detail{
+    width: 77%;
+    margin-left: 11vw;
+}
+#zhongli .elements{
+    margin-left: 17vw;
+    margin-top: -33vh;
+}
+#shenhe{
+    margin-left: -10vw;
+}
+#shenhe .char-description{
+    margin-left: -10vw;
+}
+#shenhe .char-name{
+    font-size: 14vh;
+    margin-top: 10vh;
+    margin-left: 15vw;
+}
+#shenhe .char-detail{
+    width: 59%;
+    margin-left: 16vw;
+    margin-top: 10vh;
+}
+#shenhe .elements{
+    margin-left: 23vw;
+    margin-top: -24vh;
+}
+.liyue-char-label{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.liyue-char-label img{
+    width: 80%;
+}
+
+#liyue-char-1:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#liyue-char-2:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#liyue-char-3:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#liyue-char-4:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*inazuma container*/
+.inazuma-characters{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+}
+.inazuma-char-label{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inazuma-char-label img{
+    width: 80%;
+}
+#raiden{
+    margin-left: -10vw;
+}
+#raiden .char-image{
+    margin-top: -10vh;
+}
+#raiden .char-detail{
+    width: 65%;
+    font-size: 2.5vh;
+}
+#raiden .char-name{
+    font-size: 12vh;
+    margin-left: 13vw;
+}
+#ayato{
+    margin-left: -10vw;
+}
+#ayato .char-name{
+    font-size: 10vh;
+    margin-top: 10vh;
+    margin-left: 9vw;
+}
+#ayato .char-detail{
+    width: 72%;
+    font-size: 2.5vh;
+    margin-left: 8vw;
+}
+#ayato .elements{
+    margin-left: 15vw;
+}
+#yoimiya .char-image{
+    margin-left: 5vw;
+}
+#yoimiya .char-name{
+    font-size: 8vh;
+    margin-top: 15vh;
+    margin-left: 13vw;
+}
+#yoimiya .char-detail{
+    width: 60%;
+    margin-left: 14vw;
+}
+#yoimiya .elements{
+    margin-left: 21vw;
+}
+#yae .char-image{
+    margin-left: 5vw;
+}
+#yae .char-name{
+    font-size: 12vh;
+    margin-left: 15vw;
+}
+#yae .char-detail{
+    width: 85%;
+    margin-left: 15vw;
+}
+#yae .elements{
+    margin-left: 15vw;
+    margin-top: -33vh;
+}
+#inazuma-char-1:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#inazuma-char-2:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#inazuma-char-3:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#inazuma-char-4:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*sumeru container*/
+.sumeru-characters{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    margin-top: 0;
+    display: flex;
+    visibility: hidden;
+    z-index: -1;
+}
+#nahida{
+    margin-left: -10vw;
+}
+#nahida .char-name{
+    font-size: 10vh;
+    margin-top: 10vh;
+    margin-left: 12vw;
+}
+#nahida .char-detail{
+    width: 65%;
+    margin-top: 3vh;
+    margin-left: 12vw;
+}
+#tighnari{
+    margin-left: -5vw;
+}
+#tighnari .char-image{
+    margin-top: -10vh;
+}
+#tighnari .char-description{
+    margin-left: 10vh;
+}
+#tighnari .char-name{
+    font-size: 11vh;
+    margin-top: 15vh;
+    margin-left: 4vw;
+}
+#tighnari .char-detail{
+    margin-top: 3vh;
+    width: 75%;
+    margin-left: 5vw;
+}
+#tighnari .elements{
+    margin-top: -23vh;
+    margin-left: 11vw;
+}
+#alhaitham{
+    margin-left: -10vw;
+}
+#alhaitham .char-description{
+    margin-left: 5vw;
+}
+#alhaitham .char-name{
+    font-size: 9vh;
+    margin-left: 2.5vw;
+}
+#alhaitham .char-detail{
+    width: 84%;
+    margin-top: 5vh;
+    font-size: 2.5vh;
+    margin-left: 2.5vw;
+}
+#alhaitham .elements{
+    margin-top: -20vh;
+    margin-left: 10vw;
+}
+#wanderer .char-image{
+    margin-left: 12vw;
+}
+#wanderer .char-description{
+    margin-left: 3vw;
+}
+#wanderer .char-name{
+    font-size: 9vh;
+    margin-top: 15vh;
+    margin-left: 0vw;
+}
+#wanderer .char-detail{
+    width: 90%;
+    margin-top: 2vh;
+    margin-left: 0vw;
+}
+#wanderer .elements{
+    margin-top: -23vh;
+    margin-left: 7vw;
+}
+.sumeru-char-label{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sumeru-char-label img{
+    width: 80%;
+}
+
+#sumeru-char-1:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#sumeru-char-2:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#sumeru-char-3:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+#sumeru-char-4:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*village navigation pane*/
+#village-1:checked ~ .village-container{
+    transition: 1.5s;
+}
+#village-2:checked ~ #village-container{
+    margin-left: -100%;
+    transition: 1.5s;
+}
+#village-3:checked ~ .village-container{
+    margin-left: -200%;
+    transition: 1.5s;
+}
+#village-4:checked ~ .village-container{
+    margin-left: -300%;
+    transition: 1.5s;
+}
+
+#village-1:checked ~ #vlabel-1.village-name{
+    text-shadow:
+        0 0 5px #03fec8,
+        0 0 10px #27f7ca,
+        0 0 15px #4afdd6,
+        0 0 20px #67fada,
+        0 0 25px #9cf9e5;	
+}
+#village-2:checked ~ #vlabel-2.village-name{
+    text-shadow:
+        0 0 5px #ffee00,
+        0 0 10px #feee18,
+        0 0 15px #fdf143,
+        0 0 20px #fdf36d,
+        0 0 25px #fff89b;	
+}
+#village-3:checked ~ #vlabel-3.village-name{
+    text-shadow:
+        0 0 5px #7406fa,
+        0 0 10px #8423fb,
+        0 0 15px #9847fb,
+        0 0 20px #a45bfd,
+        0 0 25px #c294f9;	
+}
+#village-4:checked ~ #vlabel-4.village-name{
+    text-shadow:
+        0 0 5px #00c013,
+        0 0 10px #19c12a,
+        0 0 15px #33be40,
+        0 0 20px #4dc258,
+        0 0 25px #76b77d;	
+}
+
+
+
+
+
+

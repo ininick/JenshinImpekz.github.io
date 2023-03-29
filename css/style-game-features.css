@@ -1,0 +1,266 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.explore .navBar{
+	text-shadow: 
+    0 0 15px #8eceff,
+  0 0 6px #33b9f8,
+  0 0 3px #26b6f9;	
+}
+
+.background-1{
+    background-image: url(/Assets/GameFeatures1.png);
+}
+
+.background-2{
+    background-image: url(/Assets/GameFeatures2.png);
+}
+
+.background-3{
+    background-image: url(/Assets/GameFeatures3.png);
+}
+
+.background-4{
+    background-image: url(/Assets/GameFeatures4.png);
+}
+
+.background-5{
+    background-image: url(/Assets/GameFeatures5.png);
+}
+
+.poster{
+    /* border: 5px solid aquamarine; */
+    background-image: url(/assets/TOP.png);
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+.poster-img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.textDescription{
+    display: block;
+    color: #ffff;
+    font-size: large;
+    margin-top: 70vh;
+    justify-content: center;
+    text-align: center;
+    text-shadow:
+		0 0 1px #000000,
+		0 0 5px #0000,
+		0 0 20px #4cd2ff;	
+}
+
+.container{
+    /* border: 5px solid #aaff00; */
+    /* margin-top: -100px; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/Assets/ContainerImg.png);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+input{
+    /* visibility: hidden; */
+    display: none;
+}
+.container img{
+    width: 100%;
+}
+
+.container iframe{
+    width: 100%;
+}
+
+.textContainer{
+    color: #ffff;
+    text-align: center;
+    justify-content: center;
+}
+
+.container-slider{
+    /* border: 2px solid greenyellow; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    /* border: 2px solid red; */
+    width: 50vw;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.prev-carousel{
+    /* border: 2px solid red; */
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -5%;
+}
+.next-carousel{
+    /* border: 2px solid aqua; */
+    margin-top: 10%;
+    margin-left:50.3%;
+    position: absolute;
+}
+
+.navigation-manual{
+    margin-top: -10%;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #ffff;
+    padding: 5px;
+    margin: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.manual-btn:hover{
+    background: #ffff;    
+}
+
+.guide_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffff;
+    text-shadow:
+    0 0 1px #000000,
+    0 0 5px #0000,
+    0 0 20px #4cd2ff;	
+}
+
+.guide-intro_item:nth-child(2n){
+    background-position: right center;
+}
+
+.guide-intro_item{
+    top: 40px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 1100px;
+    height: 400px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.guide-intro_item:nth-child(2n) .guide-intro_content {
+    left: -14px;
+}
+
+.guide-intro_item:nth-child(n) .guide-intro_content {
+    right: -14px;
+}
+
+.guide-intro_content{
+    position: absolute;
+    top: -50px;
+    /* left: -50px; */
+    /* right: auto; */
+    /* border: solid white; */
+    /* bottom: 50px; */
+    padding: 46px;
+    width: 340px;
+    height: 260px;
+    background: url(/Assets/backGroundText.png) center/cover no-repeat;
+    background-size: cover;
+}
+
+.guide * {
+    word-break: break-word;
+}
+
+.guide-intro_title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #654f42;
+}
+
+.guide-intro_desc{
+    line-height: 26px;
+    font-size: 15px;
+    text-align: left;
+    color: #78604b;
+}
+
+.guide-intro_more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px auto 0;
+    padding: 10px;
+    width: 300px;
+    height: 35px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    background: url(/Assets/ViewCharacters.png)
+    center/ cover no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.guide-intro_more a{
+    color: #804901;
+    text-decoration: none;
+}
+
+.guide-intro_more:hover{
+    opacity: .7;
+}
+
+.guide-screenshot{
+    margin-bottom: 10vh;
+}

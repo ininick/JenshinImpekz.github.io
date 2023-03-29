@@ -1,0 +1,362 @@
+@font-face {
+	font-family: myfont;
+	src: url(/assets/genshin-font.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+/*******************HEADER*********************/
+.audio{
+	display: none;
+}
+.header {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 100;
+	/* opacity: 90%; */
+	color: #fff;
+	width: 100%;
+	max-width: auto;
+	/* max-height: 15vh; */
+	height: fit-content;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+	padding: 0;
+}
+
+.header:hover{
+	opacity: 1;
+}
+
+.logo img {
+	margin-left: 20px;
+    margin-right: 15px;
+	height: 40px;
+}
+
+.navmenu {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	z-index: 100;
+}
+
+.navmenu li {
+	height: fit-content;
+	/* margin: 10px 0 20px 0;
+	padding: 10px 10px 0 10px; */
+}
+
+.navmenu li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	font-size: small;
+	transition: background-color 0.3s ease;
+}
+
+.subNavBar{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.navBar{
+	padding: 10px 20px 0;
+	margin-top: 28px;
+}
+.navBar:hover{
+    color: #d8d8d8;
+	text-shadow: 
+	  	0 0 15px #8eceff,
+		0 0 6px #33b9f8,
+		0 0 3px #26b6f9;	
+    border-radius: 5px;
+}
+
+.subNavBar:hover{
+	background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+.subNavBar:hover{
+	color: #8b8b8b;
+}
+.navmenu nav .explore{
+	margin: 0;
+}
+.explore .navBar{
+	position: relative;
+	padding: 38px 10px;
+	margin: 0;
+}
+
+.explore-content {
+	display: none;
+	position: absolute;
+	font-size: 15px;
+	top: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	min-width: 120px;
+	padding: 10px;
+    border-radius: 1px;
+	z-index: 1;
+}
+
+.explore:hover .explore-content {
+	display: block;
+}
+.explore-content:hover{
+	display: block;
+}
+.account{
+	display: block;
+	list-style: none;
+	margin-left: auto;
+}
+.login{
+	padding: 35px 35px;
+	display: flex;
+	opacity: 70%;
+}
+.login:hover{
+	opacity: 100%;
+}
+.login-icon{
+	/* border: 2px solid aqua; */
+	max-height: 17px;
+	margin-left: 10px;
+}
+
+.account-content{
+	display: none;
+	position: absolute;
+	font-size: 15px;
+	top: 100%;
+	right: 162px;
+	background-color: rgba(0, 0, 0, 0.9);
+	min-width: 120px;
+	padding: 10px 15px;
+	z-index: 1;
+	border: #26b6f9;
+}
+.account:hover{
+	cursor: pointer;
+}
+.account:hover .account-content {
+	display: block;
+}
+.button{
+	display: inline-block;
+	background-color: #ffcb11;
+	color: #52461a;
+	border: rgba(0, 0, 0, 1);
+	margin-right: 0;
+	padding: 35px 35px;
+	text-decoration: none;
+	font-size: larger;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+.hamb-icon{
+	display: none;
+}
+
+.button:hover {
+	background-color: #b8ac10;
+}
+.download-popup{
+	width: 50vw;
+	height: 50vh;
+	margin-left: 25vw;
+	margin-top: 90vh;
+	display: none;
+	position: absolute;
+}
+.download-popup.open{
+	display: block;
+}
+
+.close-download{
+	/* display: none; */
+	position: fixed;
+	margin-top: -2%;
+	right: 21%;
+	/* margin-top: 0;
+	margin-right: 0; */
+	width: 40px;
+	cursor: pointer;
+}
+.download-contents{
+	width: 100%;
+	height: 100%;
+	margin-top: -20px;
+	background: url(/assets/bg-download.png);
+	background-size: cover;
+	background-position: 20%;
+	border: 3px solid rgba(0, 0, 0, 0.9);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.download-heading{
+	font-family: myfont;
+	font-size: 250%;
+	font-weight: 20px;
+	color: rgb(48, 48, 48);
+	text-shadow:
+		0 0 1px #ffffff,
+		0 0 5px #d5d5d500;	
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.download-type{
+	margin-top: 25%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+.qr-download{
+	width: 50%;
+	height: 75%;
+	margin-top: 15px;
+}
+.down-1{
+	width: 100%;
+	height: 100%;
+	padding: 0 0 20px 10px;
+	display: flex;
+	flex-direction: column;
+}
+.down-1 li{
+	margin: 10px 5px;
+}
+.down-2{
+	width: 100%;
+	height: 100%;
+	padding: 0 10px 20px 0;
+	display: flex;
+	flex-direction: column;
+}
+.down-2 li{
+	margin: 10px 5px;
+}
+.epic-games{
+	width: 100%;
+	height: 100%;
+	margin-top: 94px;
+}
+
+/******************FOOTER****************/
+.footer {
+	background-color: #000000;
+	margin-bottom: 0;
+	max-width: auto;
+	max-height: fit-content;
+	margin:  auto;
+	align-items: center;
+	justify-content: center;
+	display: block;
+	overflow: hidden;
+}
+.footer-logo{
+	padding-top: 3vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* margin: 10px; */
+}
+.footer-logo img{
+	width: 130px;
+}
+.social-media nav{
+	list-style: none;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+}
+.social-media nav li img{
+	opacity: 50%;
+	width: 35px;
+}
+.social-media nav li img:hover{
+	opacity: 100%;
+}
+#ig{
+	margin-right: 5px;
+}
+#tw{
+	margin-right: 5px;
+	height: 30px;
+	width: 30px;
+}
+#yt{
+	margin-right: 7px;
+}
+
+#fb{
+	margin-left: 1px;
+	height: 30px;
+	margin-left: 0;
+	overflow: hidden;
+}
+.policy{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+.policy nav{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.policy nav li{
+	font-size: small;
+	padding: 5px;
+	color: #fff;
+}
+.policy nav li a{
+	color: #fff;
+	text-decoration: none;
+	opacity: 45%;
+}
+.policy nav li a:hover{
+	opacity: 100%;
+}
+.teen-esrb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.teen-esrb img{
+	width: 170px;
+}
+.hoyoverse-logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hoyoverse-logo img{
+	width: 250px;
+}
+.copyright{
+	color: #fff;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-weight: 50%;
+}

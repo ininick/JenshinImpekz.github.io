@@ -1,0 +1,144 @@
+
+@media screen and (max-width: 769px){
+	.header{
+		max-width: 769px;
+		max-height: 70px;
+	}
+	.header .logo img{
+		height: 30px;
+		margin-right: 5px;
+	}
+	.navBar{
+		padding: 10px 15px 0;
+	}
+	.account{
+		transform: scale(0.9);
+		padding: 20px 0;
+	}
+	.button{
+		padding: 25px;
+	}
+	.download-popup{
+		width: 500px;
+		position: absolute;
+		margin: 0;
+		top: 300%;
+		left: 17%;
+	}
+	.download-heading{
+		font-size: 32px;
+	}
+	.qr-download{
+		margin-top: 10px;
+		height: 80%;
+	}
+	.down-1{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.down-1 li img{
+		width: 150px;
+	}
+	.down-2{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	.down-2 li img{
+		width: 150px;
+	}
+	.epic-games{
+		width: auto;
+		height: 70%;
+		margin-top: 70px;
+	}
+	.close-download{
+		position: fixed;
+		margin-top: -6%;
+		right: 12%;
+		width: 40px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 321px) {
+	.header{
+		max-height: 50px;
+		display: flex;
+	}
+	.header .logo img{
+		height: 20px;
+		margin-left: 10px;
+	}
+    .hamb-icon{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+        opacity: 0.75;
+    }
+	.navmenu{
+		background-color: rgba(0, 0, 0, 0.6);
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100px;
+		display: none;
+	}
+    .navmenu li a{
+        font-size: 10px;
+    }
+	.navBar{
+		margin: 0;
+		padding: 10px 5px;
+        font-size: smaller;
+	}
+	.explore .navBar{
+		margin: 0;
+		padding: 10px 5px;
+	}
+	.explore-content{
+		/* transform: scale(0.6);
+		top:90px;   
+		right: 72px; */
+		display: none;
+	}
+    .account{
+        width: fit-content;
+    }
+    .login{
+        padding: 15px;
+    }
+	.login div{
+		display: none;
+	}
+	.login img{
+		margin-right: 10px;
+	}
+	.button{
+        display: none;
+	}
+    .account-content{
+        display: none;
+    }
+}
+
+
+/* 
+    background-image: url(jenshinFolder/bg-homepage-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+ */

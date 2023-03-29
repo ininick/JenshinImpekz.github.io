@@ -1,0 +1,43 @@
+@media screen and (max-width: 769px){
+    .nameVillage{
+        font-size: 35px;
+    }
+    
+    .village-detail{
+        /* border: solid white; */
+        box-sizing: border-box;
+        transform: scale(0.7);
+        font-size: 100%;
+    }
+
+    .logoVillage{
+        transform: scale(0.75);
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .nameVillage{
+        /* border: solid red; */
+        margin-top: -10px;
+        font-size: 30px;
+    }
+    
+    .village-detail{
+        /* border: solid white; */
+        box-sizing: border-box;
+        transform: scale(0.7);
+    }
+    
+    .logoVillage{
+        /* border: solid yellow; */
+        transform: scale(0.7);
+    }
+
+    .descriptionVillage{
+        display: none;
+    }
+
+    .descriptionVillage1{
+        display: none;
+    }
+}

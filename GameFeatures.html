@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Features</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="css/style-header-footer.css">
+    <link rel="stylesheet" href="css/res-header-footer.css">
+    <link rel="stylesheet" href="css/style-game-features.css">
+    <link rel="stylesheet" href="/css/res-game-features.css">
+</head>
+<body>
+    <div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="assets/Genshin2.png">
+			</a>
+		</div>
+		<div class="navmenu" id="navmenu">
+			<li><a class="navBar" href="index.html">HOME</a></li>
+			<li><a class="navBar" href="index.html#news-id">NEWS</a></li>
+			<li><a class="navBar" href="characters.html">CHARACTERS</a></li>
+			<li class="explore">
+				<a class="navBar" href="GameFeatures.html">EXPLORE</a>
+				<div class="explore-content">
+					<a class="subNavBar" href="GameFeatures.html">Game Features</a>
+					<a class="subNavBar" href="map.html">Map</a>
+				</div>
+			</li>
+		</div>
+		<div class="account">
+			<div  class="login">
+				<div>ACCOUNT</div>
+				<a href="register.html">
+					<img class="login-icon" target="_blank" src="assets/login-profile.png">
+				</a>
+			</div>
+			<div class="account-content">	
+				<a class="subNavBar" target="_blank" href="/register.html">Register</a>
+				<a class="subNavBar" target="_blank" href="/register.html">Log in</a>
+			</div>
+		</div>
+		<button class="button" id="download-btn" onclick = "showDownload()">Download</button>
+		<div class="hamb-icon" id="hamb">
+			<img src="assets/hamb-icon.png" alt="">
+		</div>
+		<div class="download-popup">
+			<img class="close-download" src="assets/close.png" onclick="hideDownload()">
+			<div class="download-contents" onclick="showDownload()">
+				<div class="download-heading">DOWNLOAD</div>
+				<div class="download-type">
+					<img class="qr-download" src="assets/qr-download.png" alt="">
+					<div class="down-1">	
+						<li>
+							<a href="https://www.playstation.com/en-id/games/genshin-impact/">
+								<img src="assets/playstation.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default">
+								<img src="assets/windows.png" alt="">
+							</a>
+						</li>
+					</div>
+					<div class="down-2">
+						<li>
+							<a href="https://apps.apple.com/app/id1517783697">
+								<img src="assets/appstore.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact">
+								<img src="assets/googleplay.png" alt="">
+							</a>
+						</li>
+					</div>
+					<a class="epic-games" href="https://www.epicgames.com/store/p/genshin-impact">
+						<img src="assets/epic-games.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- BAGIAN POSTER -->
+    <div class="poster" onclick="hideDownload()">
+        <!-- <img class="poster-img" src="/assets/TOP.png" > -->
+        <div class="textDescription">
+            <h1>
+                Available on
+            </h1>
+            <h1>
+                Multiple Platforms
+            </h1>
+            <h4>
+                9/28/2020 10:00:00 (UTC+8)
+            </h4>
+        </div>
+    </div>
+
+    <!-- BAGIAN GAME VIDEO -->
+    <div class="container" onclick="hideDownload()">
+        <div class="container-slider">
+            <h1 class="guide_title">Game Video</h1>
+            <div class="slider">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="prev-carousel" id="prev-car" onclick="prevCarousel()">
+                    <img src="assets/prev-button.png" alt="">
+                </div>
+                <div class="next-carousel" id="next-car" onclick="nextCarousel()">
+                    <img src="assets/next-button.png" alt="">
+                </div>
+                <div class="slides">    
+                    <!-- slide images start -->
+                    <div class="slide" id="slide-1">
+                        <!-- <img src="assets/Yoimiya.jpg" alt=""> -->
+                        <iframe width="auto" 
+                            height="100%" src="https://www.youtube.com/embed/HnElxo1lghU" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="slide">
+                        <!-- <img src="assets/background-5.jpg" alt=""> -->
+                        <iframe width="auto" 
+                            height="100%" src="https://www.youtube.com/embed/mvrW4aKwAXw" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="slide">
+                        <!-- <img src="assets/background-6.jpg" alt=""> -->
+                        <iframe width="auto" 
+                            height="100%" src="https://www.youtube.com/embed/zZEpU-DbzZU" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="slide">
+                        <!-- <img src="assets/background-9.jpg" alt=""> -->
+                        <iframe width="auto" 
+                            height="100%" src="https://www.youtube.com/embed/2kY4raFWXtM" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <!-- slide images end -->
+                    
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn" id="nav-1"></label>
+                    <label for="radio2" class="manual-btn" id="nav-2"></label>
+                    <label for="radio3" class="manual-btn" id="nav-3"></label>
+                    <label for="radio4" class="manual-btn" id="nav-4"></label>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- BAGIAN GAME FEATURES -->
+        <div class="guide-intro">
+            <h1 class="guide_title">Game Features</h1>
+            <div class="guide-intro_item background-1">
+                <div class="guide-intro_content">
+                    <div class="guide-intro_title">
+                        An Epic Fantasy Adventure
+                    </div>
+                    <div class="guide-intro_desc">
+                        Experience an immersive single-player campaign. As a traveler from another world, you will embark on a journey to reunite with your long-lost sibling and unravel the mysteries of Teyvat, and yourself.
+                    </div>
+                </div>
+            </div>
+            <div class="guide-intro_item background-2">
+                <div class="guide-intro_content">
+                    <div class="guide-intro_title">
+                        Your World to Discover
+                    </div>
+                    <div class="guide-intro_desc">
+                        Fly across the open world, swim through crystal-clear waters, and climb towering mountains. Stray off the beaten path to discover all the hidden secrets of a world full of wonder and mystery.
+                    </div>
+                </div>
+            </div>
+            <div class="guide-intro_item background-3">
+                <div class="guide-intro_content">
+                    <div class="guide-intro_title">
+                        Travel Alone or Battle Together
+                    </div>
+                    <div class="guide-intro_desc">
+                        Charge head-on into battles solo, or invite friends to join the fight against dangerous monsters with 4-player cross-play for PS4, iOS, Android, and PC.
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-intro_item background-4">
+                <div class="guide-intro_content">
+                    <div class="guide-intro_title">
+                        Master the Seven Elements
+                    </div>
+                    <div class="guide-intro_desc">
+                        Not just another mindless hack and slash. Manipulating the various elements is the key to defeating powerful enemies and solving challenging puzzles.
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-intro_item background-5">
+                <div class="guide-intro_content">
+                    <div class="guide-intro_title">
+                        Build Your Dream Team
+                    </div>
+                    <div class="guide-intro_desc">
+                        Choose who fights by your side. Build your party from over 20+ characters (with more to come) — each with unique abilities, personalities, and combat styles.
+                    </div>
+                </div>
+            </div>
+            <div class="guide-intro_more">
+                <a href="characters.html">View Characters</a> 
+            </div>
+        </div>  
+
+
+        <!-- BAGIAN GAME SCREENSHOTS -->
+
+        <div class="guide-screenshot">
+            <div class="container-slider">
+                <h1 class="guide_title">Game Screenshots</h1>
+                <div class="slider">
+                    <input type="radio" name="radio-btn" id="radio5" checked>
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <input type="radio" name="radio-btn" id="radio8">
+                    <div class="prev-carousel" id="prev-car1" onclick="prevCarousel()">
+                        <img src="assets/prev-button.png" alt="">
+                    </div>
+                    <div class="next-carousel" id="next-car1" onclick="nextCarousel()">
+                        <img src="assets/next-button.png" alt="">
+                    </div>
+                    <div class="slides">    
+                        <!-- slide images start -->
+                        <div class="slide" id="slide-2">
+                            <img src="assets/Xiao.jpg" alt="">
+                            <!-- <iframe width="800" height="600" src="https://www.youtube.com/embed/HnElxo1lghU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="slide">
+                            <img src="assets/ayaka.jpg" alt="">
+                            <!-- <iframe width="800" height="600" src="https://www.youtube.com/embed/HnElxo1lghU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="slide">
+                            <img src="assets/hutao-bg.webp" alt="">
+                            <!-- <iframe width="800" height="600" src="https://www.youtube.com/embed/HnElxo1lghU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        </div>
+                        <div class="slide">
+                            <img src="assets/Jean.jpg" alt="">
+                            <!-- <iframe width="800" height="600" src="https://www.youtube.com/embed/HnElxo1lghU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                        </div>
+                        <!-- slide images end -->
+    
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio5" class="manual-btn" id="nav-5"></label>
+                        <label for="radio6" class="manual-btn" id="nav-6"></label>
+                        <label for="radio7" class="manual-btn" id="nav-7"></label>
+                        <label for="radio8" class="manual-btn" id="nav-8"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" onclick="hideDownload()">
+		<div class="footer-logo">
+			<img src="assets/Genshin2.png">
+		</div>
+		<div class="social-media">
+			<nav>
+				<li>
+					<a target="_blank" href="https://hoyo.link/59k1BaAd">
+						<img id="ig" src="assets/icon-instagram.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/97k1BRAd">
+						<img id="tw" src="assets/icon-twitter.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/b7k1BCAd">
+						<img id="yt" src="assets/icon-youtube.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/bek1B9Ad	">
+						<img id="dc" src="assets/icon-discord.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/5ek1BZAd">
+						<img id="fb" src="assets/icon-facebook.png" alt="icon">
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="policy">
+			<nav>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/privacy">
+						Privacy policy
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/terms">
+						Terms of service
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">
+						About Us
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="mailto:genshin_cs@hoyoverse.com">
+						Contact Us
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="teen-esrb">
+			<img src="assets/ESRB.png">
+		</div>
+		<div class="hoyoverse-logo">
+			<img src="assets/hoyoverse.png">
+		</div>
+		<div class="copyright">
+			<p></p>
+			<p>
+				Copyright © COGNOSPHERE. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+    <script src="js/gamefeatures.js"></script>
+    <script src="js/download.js"></script>
+    <script src="js/navmenu.js"></script>
+</body>
+</html>

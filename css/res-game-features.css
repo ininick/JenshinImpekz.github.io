@@ -1,0 +1,153 @@
+@media screen and (max-width: 769px) {
+    .poster{
+        box-sizing: border-box;
+        display: flex;
+        align-items: end;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position-x: center;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    .textDescription{
+        width: 100%;
+        font-size: medium;
+    }
+    .container-slider{
+        transform: scale(0.9);
+    }
+    .prev-carousel{
+        transform: scale(0.7);
+        margin-top: 14%;
+        margin-left: -10%;
+    }
+    .next-carousel{
+        transform: scale(0.7);
+        margin-top: 14%;
+        margin-left: 49.5%;
+    }
+    .manual-btn{
+        transform: scale(0.8);
+        margin: 0 10px;
+    }
+
+    .guide-intro_item{
+        border: solid white;
+        transform: scale(0.9);
+        width: 80%;
+        position: relative;
+        
+    }
+    
+    .guide-intro_content{
+        margin: -10% 65% 0 65%;
+        position: absolute;
+        background-size: cover; 
+        bottom: 0;
+        transform: scale(0.8);
+        width: 40%;
+    }
+
+    .guide-intro_more{
+        transform: scale(0.8);
+    }
+    
+    .guide-intro_more a{
+        color: #804901;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .poster{
+        box-sizing: border-box;
+        display: flex;
+        align-items: end;
+        background-size: cover;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position-x: -410px;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+    }
+    .textDescription{
+        width: 100%;
+        font-size: small;
+    }
+    .guide_title{
+        font-size: 25px;
+    }
+    .slider{
+        width: 80%;
+    }
+    
+    .slides{
+        height: fit-content;
+    }
+    .slide{
+        width: 25%;
+        height: fit-content;
+    }
+    .prev-carousel{
+        transform: scale(0.5);
+        position: absolute;
+        left: -1%;
+    }
+    .next-carousel{
+        transform: scale(0.5);
+        position: absolute;
+        right: -11%;
+    }
+    .prev-carousel,.next-carousel{
+        bottom: 33%;
+    }
+    .manual-btn{
+        transform: scale(0.6);
+        margin: 0 8px;
+    }
+
+    .navigation-manual{
+        margin-top: -13%;
+    }
+
+    .guide-intro_item{
+        transform: scale(0.5);
+        position: relative;
+        margin-bottom: -50px;
+        margin-top: -50px;
+        
+    }
+
+    .guide-intro_content{
+        margin: -10% 20% 0 20%;
+        position: absolute;
+        bottom: 0px;
+        transform: scale(0.8);
+        width: 90%;
+    }
+
+    .guide-intro_more{
+        transform: scale(0.5);
+    }
+
+    .container-slider h1{
+        font-size: 30px;
+    }
+    
+
+}

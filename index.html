@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Genshin Impekz - Step Into a Vast Magical World</title>
+	<link rel="icon" href="assets/icon.png">
+	<link rel="stylesheet" href="css/style-header-footer.css">
+	<link rel="stylesheet" href="css/res-header-footer.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/res-style.css">
+</head>
+<body>
+	<!-- *********************HEADER*********************** -->
+	<div class="header">
+		<div class="logo">
+			<a href="#home-screen">
+				<img src="assets/Genshin2.png">
+			</a>
+		</div>
+		<div class="navmenu" id="navmenu">
+			<li><a class="navBar" href="#home-screen">HOME</a></li>
+			<li><a class="navBar" href="#news-id">NEWS</a></li>
+			<li><a class="navBar" href="characters.html">CHARACTERS</a></li>
+			<li class="explore">
+				<a class="navBar" href="GameFeatures.html">EXPLORE</a>
+				<div class="explore-content">
+					<a class="subNavBar" href="GameFeatures.html">Game Features</a>
+					<a class="subNavBar" href="#village-map">Map</a>
+				</div>
+			</li>
+		</div>
+		<div class="account">
+			<div  class="login">
+				<div>ACCOUNT</div>
+				<a href="register.html" target="_blank">
+					<img class="login-icon" src="assets/login-profile.png">
+				</a>
+			</div>
+			<div class="account-content">	
+				<a class="subNavBar" target="_blank" href="register.html">Register</a>
+				<a class="subNavBar" target="_blank" href="register.html">Log in</a>
+			</div>
+		</div>
+		<button class="button" id="download-btn" onclick = "showDownload()">Download</button>
+		<div class="hamb-icon" id="hamb">
+			<img src="assets/hamb-icon.png" alt="">
+		</div>
+		<div class="download-popup">
+			<img class="close-download" src="assets/close.png" onclick="hideDownload()">
+			<div class="download-contents" onclick="showDownload()">
+				<div class="download-heading">DOWNLOAD</div>
+				<div class="download-type">
+					<img class="qr-download" src="assets/qr-download.png" alt="">
+					<div class="down-1">	
+						<li>
+							<a href="https://www.playstation.com/en-id/games/genshin-impact/">
+								<img src="assets/playstation.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default">
+								<img src="assets/windows.png" alt="">
+							</a>
+						</li>
+					</div>
+					<div class="down-2">
+						<li>
+							<a href="https://apps.apple.com/app/id1517783697">
+								<img src="assets/appstore.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact">
+								<img src="assets/googleplay.png" alt="">
+							</a>
+						</li>
+					</div>
+					<a class="epic-games" href="https://www.epicgames.com/store/p/genshin-impact">
+						<img src="assets/epic-games.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ************************HOME******************* -->
+	<div class="background-fs" id="home-screen" onclick = "hideDownload()">
+		<!-- <img class="bg-img" src="assets/background-9.jpg"> IF BACKGROUND USING IMG -->
+		<div>
+			<div class="poster">
+				<div class="traveller-msg">
+					<h1>
+						Hello Traveller!
+					</h1>
+					<h1>
+						Let's explore Tevyat with best partner in the world, Paimon!
+					</h1>
+				</div>
+				<nav>
+					<ul class="poster-download">
+						<li>
+							<a href="https://www.playstation.com/games/genshin-impact/">
+								<img src="assets/playstation.png" alt="key">
+							</a>
+						</li>
+						<li>
+							<a href="https://apps.apple.com/app/id1517783697">
+								<img src="assets/appstore.png" alt="key">
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact">
+								<img src="assets/googleplay.png" alt="key">
+							</a>
+						</li>
+						<li>
+							<a href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default">
+								<img src="assets/windows.png" alt="key">
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- <img class="esrb-icon" src="assets/ESRB.png"> -->
+	</div>
+	<!-- *******************************NEWS******************************** -->
+	<div class="news-page" id="news-id" onclick="hideDownload()">
+		<div class="bg"></div>
+		<h1 class="news-heading">NEWS</h1>
+        <div class="container">
+            <input type="radio" name="radio" id="image-1">
+            <input type="radio" name="radio" id="image-2">
+            <input type="radio" name="radio" id="image-3">
+            <input type="radio" name="radio" id="image-4">
+            <div class="slides">
+                <div class="slide">
+                    <img src="assets/news/dehya.jpg" alt="">
+                    <div class="news">
+                        <div class="description">
+                            <h1>New Characters : Dehya</h1>
+                            <h2>A member of the Eremites, a mercenary organization 
+                                that roams the sands of Sumeru. Valiant and powerful,
+                                she enjoys great fame amongst her fellow Eremites.
+                            </h2>
+                            <div class="desc-detail">
+                                <h2>Characters detail : </h2>
+                                <h3>Element  : Pyro</h3>
+                                <h3>Weapon   : Claymore</h3>
+                                <h3>Region   : Sumeru</h3>
+                                <h3>Birthday : April 7th</h3>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/news/dehya-wpn.avif" alt="">
+                    <div class="news">
+                        <div class="description">
+                            <h1>New Weapon : Beacon of the Reed Sea</h1>
+                            <h2>Beacon of the Reed Sea is the signature weapon 
+                                designed for Dehya. It is also a good CRIT Rate weapon 
+                                that can be used by most characters, especially DPS.
+                            </h2>
+                            <div class="desc-detail">
+                                <h2>Weapon detail : </h2>
+                                <h3>Type : Claymore</h3>
+                                <h3>Rarity : 5</h3>
+                                <h3>Base Attack [Lvl. 90] : 650</h3>
+                                <h3>Sub Stats : Crit Rate 35%</h3>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/news/event.jpg" alt="">
+                    <div class="news">
+                        <div class="description">
+                            <h1>New Event : The Exquisite Night Chimes</h1>
+                            <h2>
+                                You're attending Liyue on your adventure, 
+                                but suddenly it's time for the lantern rite!
+                                 However, there are some problems that can 
+                                 disrupt the lantern rite! Play the event 
+                                  get various prizes!
+                            </h2>
+                            <div class="desc-detail">
+                                <h2>Event detail : </h2>
+                                <h3>Requirement : Adventure Rank 30</h3>
+                                <h3>Event Time : April, 2nd - 18th</h3>   
+                                <h3>Rewards : 14400 Primogems + Upgrade Material</h3>                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/news/fontaine.jpg" alt="">
+                    <div class="news">
+                        <div class="description">
+                            <h1>New Region : Fontaine</h1>
+                            <h2>
+                                Fontaine is one of seven region in Tevyat.
+                                Fontaine is the city-state that worships the
+                                God of Justice, Focalors as Hydro Archon.
+                            </h2>
+                            <div class="desc-detail">
+                                <h2>Region detail : </h2>
+                                <h3>Sub region : 12</h3>
+                                <h3>Release : Version 3.8</h3>   
+                                <h3>Playable characters : 6</h3>
+                                <h3>Archon quest: 3 Phase</h3>                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <label for="image-1" id="bar-1" class="bar"></label>
+                    <label for="image-2" id="bar-2" class="bar"></label>
+                    <label for="image-3" id="bar-3" class="bar"></label>
+                    <label for="image-4" id="bar-4" class="bar"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- **************************MAP VILLAGE****************************** -->
+	<div class="village-cover" id="village-map" onclick="hideDownload()">
+		<a href="/map.html#mondstadt-detail">
+			<div class="H_mondstadt">
+				Mondstadt
+			</div>
+		</a>
+		<a href="/map.html#liyue-detail">
+			<div class="H_liyue">
+				Liyue
+			</div>
+		</a>
+		<a href="/map.html#inazuma-detail">
+			<div class="H_inazuma">
+				Inazuma   
+			</div>
+		</a>
+		<a href="/map.html#sumeru-detail">
+			<div class="H_sumeru">
+				Sumeru   
+			</div>
+		</a>
+    </div>
+
+	<!-- ******************************FOOTER*************************** -->
+	<div class="footer" onclick="hideDownload()">
+		<div class="footer-logo">
+			<img src="assets/Genshin2.png">
+		</div>
+		<div class="social-media">
+			<nav>
+				<li>
+					<a target="_blank" href="https://hoyo.link/59k1BaAd">
+						<img id="ig" src="assets/icon-instagram.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/97k1BRAd">
+						<img id="tw" src="assets/icon-twitter.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/b7k1BCAd">
+						<img id="yt" src="assets/icon-youtube.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/bek1B9Ad	">
+						<img id="dc" src="assets/icon-discord.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/5ek1BZAd">
+						<img id="fb" src="assets/icon-facebook.png" alt="icon">
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="policy">
+			<nav>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/privacy">
+						Privacy policy
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/terms">
+						Terms of service
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">
+						About Us
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="mailto:genshin_cs@hoyoverse.com">
+						Contact Us
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="teen-esrb">
+			<img src="assets/ESRB.png">
+		</div>
+		<div class="hoyoverse-logo">
+			<img src="assets/hoyoverse.png">
+		</div>
+		<div class="copyright">
+			<p></p>
+			<p>
+				Copyright © COGNOSPHERE. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+	<script src="js/navmenu.js"></script>
+	<script src="js/news.js"></script>
+</body>
+</html>

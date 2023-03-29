@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+	font-family: myfont;
+	src: url(/assets/genshin-font.ttf);
+}
+.header{
+    opacity: 0.9;
+}
+
+.explore .navBar{
+	text-shadow: 
+    0 0 15px #8eceff,
+  0 0 6px #33b9f8,
+  0 0 3px #26b6f9;	
+}
+.village-bg{
+    filter: contrast(-50);
+    filter: brightness(60%);
+    position: relative;
+    width: 100%;
+    top: 0;
+	left: 0;
+	z-index: -100;
+}
+.village-container div{
+    width: 100%;
+    opacity: 1;
+    transition: 0.7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+.logoVillage{
+    width: 120px;
+}
+
+.nameVillage{
+    font-family: myfont;
+    top: 800px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: #ffff;
+    font-style: italic;
+}
+
+.descriptionVillage{
+    font-family: myfont;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 60vh;
+}
+.village-detail{
+    font-family: myfont;
+    position: absolute;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+	text-shadow: 
+		0 0 2px #000000,
+        0 0 4px #292929;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 3s;
+}
+
+.village-detail h4{
+    margin: 0 20vh;
+    text-align: center;
+}
+.descriptionVillage{
+    padding-bottom: 50px;
+}
+

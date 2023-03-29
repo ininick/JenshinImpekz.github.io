@@ -1,0 +1,13 @@
+@media screen and (max-width: 769px){
+    .slider{
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .slider{
+        transform: scale(0.7);
+        margin: 0;
+        margin-left: -105px;
+    }
+}

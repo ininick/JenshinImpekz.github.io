@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin-Impekz-Characters</title>
+    <link rel="stylesheet" href="css/style-header-footer.css">
+    <link rel="stylesheet" href="css/res-header-footer.css">
+    <link rel="stylesheet" href="css/style-characters.css">
+    <link rel="stylesheet" href="css/res-characters.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icon.png">
+</head>
+<body>
+    <div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="assets/Genshin2.png">
+			</a>
+		</div>
+		<div class="navmenu" id="navmenu">
+			<li><a class="navBar" href="index.html">HOME</a></li>
+			<li><a class="navBar" href="index.html#news-id">NEWS</a></li>
+			<li><a class="navBar" href="characters.html" id="char-page">CHARACTERS</a></li>
+			<li class="explore">
+				<a class="navBar" href="GameFeatures.html">EXPLORE</a>
+				<div class="explore-content">
+					<a class="subNavBar" href="GameFeatures.html">Game Features</a>
+					<a class="subNavBar" href="map.html">Map</a>
+				</div>
+			</li>
+		</div>
+		<div class="account">
+			<div  class="login">
+				<div>ACCOUNT</div>
+				<a href="register.html">
+					<img class="login-icon" target="_blank" src="assets/login-profile.png">
+				</a>
+			</div>
+			<div class="account-content">	
+				<a class="subNavBar" target="_blank" href="/register.html">Register</a>
+				<a class="subNavBar" target="_blank" href="/register.html">Log in</a>
+			</div>
+		</div>
+		<button class="button" id="download-btn" onclick = "showDownload()">Download</button>
+		<div class="hamb-icon" id="hamb">
+			<img src="assets/hamb-icon.png" alt="">
+		</div>
+		<div class="download-popup">
+			<img class="close-download" src="assets/close.png" onclick="hideDownload()">
+			<div class="download-contents" onclick="showDownload()">
+				<div class="download-heading">DOWNLOAD</div>
+				<div class="download-type">
+					<img class="qr-download" src="assets/qr-download.png" alt="">
+					<div class="down-1">	
+						<li>
+							<a href="https://www.playstation.com/en-id/games/genshin-impact/">
+								<img src="assets/playstation.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default">
+								<img src="assets/windows.png" alt="">
+							</a>
+						</li>
+					</div>
+					<div class="down-2">
+						<li>
+							<a href="https://apps.apple.com/app/id1517783697">
+								<img src="assets/appstore.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact">
+								<img src="assets/googleplay.png" alt="">
+							</a>
+						</li>
+					</div>
+					<a class="epic-games" href="https://www.epicgames.com/store/p/genshin-impact">
+						<img src="assets/epic-games.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- *********************CONTENT*********************** -->
+    <div class="container" onclick="hideDownload()">
+        <input type="radio" name="radio" id="village-1" checked>
+        <input type="radio" name="radio" id="village-2">
+        <input type="radio" name="radio" id="village-3">
+        <input type="radio" name="radio" id="village-4">
+        <div class="village-container" id="village-cont">
+
+            <div class="mondstadt-container">
+                <img class="village-background" src="assets/village/mondstadt-village.png" alt="">
+                <input type="radio" name= "mond-radio" id="mondstadt-1">
+                <input type="radio" name= "mond-radio" id="mondstadt-2">
+                <input type="radio" name= "mond-radio" id="mondstadt-3">
+                <input type="radio" name= "mond-radio" id="mondstadt-4">
+                <div class="characters-slides">
+                    <div class="mondstadt-characters" id="jean">
+                        <img class="char-image" src="assets/characters/mondstadt-jeansummer.png">
+                        <div class="char-description">
+                                <div class="char-name">JEAN <br> GUNNHILDR</div>
+                                <img class="elements" src="assets/characters/anemo.png" alt="">
+                                <div class="char-detail">
+                                    The older sister of Barbara, and a descendant of the prestigious
+                                     Gunnhildr Clan, Jean is the Acting Grand Master of the 
+                                     Knights of Favonius. She is always busy handling unrest 
+                                     across Mondstadt and tirelessly working to maintain the 
+                                     City of Freedom.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="mondstadt-characters" id="eula">
+                        <img class="char-image" src="assets/characters/mondstadt-eula.png">
+                        <div class="char-description">
+                                <div class="char-name">EULA LAWRENCE</div>
+                                <img class="elements" src="assets/characters/cryo.png" alt="">
+                                <div class="char-detail">
+                                    Although a descendant of the infamous and tyrannical Lawrence 
+                                    Clan, Eula severed her ties with the clan and became the captain 
+                                    of the Reconnaissance Company with the Knights of Favonius.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="mondstadt-characters" id="diluc">
+                        <img class="char-image" src="assets/characters/mondstadt-diluc.png">
+                        <div class="char-description">
+                                <div class="char-name">DILUC RAGVINDR</div>
+                                <img class="elements" src="assets/characters/pyro.png" alt="">
+                                <div class="char-detail">
+                                    Although a descendant of the infamous and tyrannical Lawrence 
+                                    Clan, Eula severed her ties with the clan and became the captain 
+                                    of the Reconnaissance Company with the Knights of Favonius.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="mondstadt-characters" id="venti">
+                        <img class="char-image" src="assets/characters/mondstadt-venti.png">
+                        <div class="char-description">
+                                <div class="char-name">VENTI (BARBATOS)</div>
+                                <img class="elements" src="assets/characters/anemo.png" alt="">
+                                <div class="char-detail">
+                                    He is a free-spirited, wine-loving bard in Mondstadt
+                                     and the current mortal vessel of Barbatos, the Anemo Archon.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="village-char-navigation">
+                    <label class="mond-char-label" for="mondstadt-1">
+                        <img id="mond-char-1" src="assets/characters/jean-logo.webp" alt="jean">
+                    </label>
+                    <label class="mond-char-label" for="mondstadt-2">
+                        <img id="mond-char-2" src="assets/characters/eula-logo.webp" alt="eula">
+                    </label>
+                    <label class="mond-char-label" for="mondstadt-3">
+                        <img id="mond-char-3" src="assets/characters/diluc-logo.webp" alt="diluc">
+                    </label>
+                    <label class="mond-char-label" for="mondstadt-4">
+                        <img id="mond-char-4" src="assets/characters/venti-logo.webp" alt="venti">
+                    </label>
+                </div>
+            </div>
+
+            <div class="liyue-container">
+                <img class="village-background" src="assets/village/liyue-village.jpg" alt="">
+                <input type="radio" name= "liyue-radio" id="liyue-1">
+                <input type="radio" name= "liyue-radio" id="liyue-2" checked>
+                <input type="radio" name= "liyue-radio" id="liyue-3">
+                <input type="radio" name= "liyue-radio" id="liyue-4">
+                <div class="characters-slides">
+                    <div class="liyue-characters" id="xiao">
+                        <img class="char-image" src="assets/characters/liyue-xiao.png">
+                        <div class="char-description">
+                                <div class="char-name">XIAO <br> (ALATUS)</div>
+                                <img class="elements" src="assets/characters/anemo.png" alt="">
+                                <div class="char-detail">
+                                    He is an adeptus, under the name Alatus, and the sole
+                                     surviving member of the five foremost Yakshas dispatched 
+                                     by Morax to subdue the demonic spirits that plagued Liyue.
+                                      He currently resides at Wangshu Inn and mostly restrains 
+                                      himself from large crowds and social interactions.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="liyue-characters" id="hutao">
+                        <img class="char-image" src="assets/characters/liyue-hutao.png">
+                        <div class="char-description">
+                                <div class="char-name">HUTAO</div>
+                                <img class="elements" src="assets/characters/pyro.png" alt="">
+                                <div class="char-detail">
+                                    Hu Tao's antics and eccentricity belies her role 
+                                    as the 77th Director of the Wangsheng Funeral Parlor 
+                                    and her talent as a poet. Nevertheless, she treats the 
+                                    parlor's operations with utmost importance, and holds funeral
+                                     ceremonies with the highest dignity and solemnity.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="liyue-characters" id="zhongli">
+                        <img class="char-image" src="assets/characters/liyue-zhongli.png">
+                        <div class="char-description">
+                                <div class="char-name">ZHONGLI (REX LAPIS)</div>
+                                <img class="elements" src="assets/characters/Geo.png" alt="">
+                                <div class="char-detail">
+                                    A consultant of the Wangsheng Funeral Parlor, he is 
+                                    later revealed to be the current vessel of the Geo Archon, 
+                                    Morax, who has decided to experience the world from the 
+                                    perspective of a mortal.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="liyue-characters" id="shenhe">
+                        <img class="char-image" src="assets/characters/liyue-shenhe.png">
+                        <div class="char-description">
+                                <div class="char-name">SHENHE</div>
+                                <img class="elements" src="assets/characters/cryo.png" alt="">
+                                <div class="char-detail">
+                                    The daughter of an unnamed exorcist couple, Shenhe
+                                     was taken in and raised by Cloud Retainer as a
+                                      disciple following a traumatic incident instigated
+                                       by Shenhe's father during her childhood.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="village-char-navigation">
+                    <label class="liyue-char-label" for="liyue-1">
+                        <img id="liyue-char-1" src="assets/characters/xiao-logo.webp" alt="xiao">
+                    </label>
+                    <label class="liyue-char-label" for="liyue-2">
+                        <img id="liyue-char-2" src="assets/characters/hutao-logo.webp" alt="hutao">
+                    </label>
+                    <label class="liyue-char-label" for="liyue-3">
+                        <img id="liyue-char-3" src="assets/characters/zhongli-logo.webp" alt="zhongli">
+                    </label>
+                    <label class="liyue-char-label" for="liyue-4">
+                        <img id="liyue-char-4" src="assets/characters/shenhe-logo.webp" alt="shenhe">
+                    </label>
+                </div>
+            </div>
+            
+
+            <div class="inazuma-container">
+                <img class="village-background" src="assets/village/inazuma-village.jpg" alt="">
+                <input type="radio" name= "inazuma-radio" id="inazuma-1">
+                <input type="radio" name= "inazuma-radio" id="inazuma-2">
+                <input type="radio" name= "inazuma-radio" id="inazuma-3">
+                <input type="radio" name= "inazuma-radio" id="inazuma-4">
+                <div class="characters-slides">
+                    <div class="inazuma-characters" id="raiden">
+                        <img class="char-image" src="assets/characters/inazuma-raiden.png">
+                        <div class="char-description">
+                                <div class="char-name">RAIDEN <br> SHOGUN</div>
+                                <img class="elements" src="assets/characters/electro.png" alt="">
+                                <div class="char-detail">
+                                    The Raiden Shogun is unique as she is comprised of two beings 
+                                    in one body: Ei, the current Electro Archon of Inazuma; and 
+                                    the Shogun, the puppet created by Ei to act as the ruler of 
+                                    Inazuma in her stead, which also serves as her vessel.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="inazuma-characters" id="ayato">
+                        <img class="char-image" src="assets/characters/inazuma-ayato.png">
+                        <div class="char-description">
+                                <div class="char-name">KAMISATO AYATO</div>
+                                <img class="elements" src="assets/characters/Hydro.png" alt="">
+                                <div class="char-detail">
+                                    He is the current head of the Kamisato Clan, the older brother 
+                                    of Kamisato Ayaka, and the Yashiro Commissioner. Resourceful 
+                                    and cunning, Ayato keeps a lower profile than his sister and 
+                                    focuses on government affairs in the Commission.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="inazuma-characters" id="yoimiya">
+                        <img class="char-image" src="assets/characters/inazuma-yoimiya.png">
+                        <div class="char-description">
+                                <div class="char-name">NAGANOHARA YOIMIYA</div>
+                                <img class="elements" src="assets/characters/pyro.png" alt="">
+                                <div class="char-detail">
+                                    Yoimiya is the current owner of Naganohara Fireworks; 
+                                    with her colorful fireworks and outgoing personality, 
+                                    Yoimiya is loved by everyone on Narukami Island. She was 
+                                    coined as the "Queen of the Summer Festival," as they 
+                                    believe summer is not the same without her.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="inazuma-characters" id="yae">
+                        <img class="char-image" src="assets/characters/inazuma-yaemiko.png">
+                        <div class="char-description">
+                                <div class="char-name">YAE MIKO</div>
+                                <img class="elements" src="assets/characters/electro.png" alt="">
+                                <div class="char-detail">
+                                    A kitsune of many facets, Yae Miko oversees the Grand Narukami Shrine,
+                                     owns the Yae Publishing House, and is Eternity's servant and friend.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="village-char-navigation">
+                    <label class="inazuma-char-label" for="inazuma-1">
+                        <img id="inazuma-char-1" src="assets/characters/raiden-logo.webp" alt="raiden">
+                    </label>
+                    <label class="inazuma-char-label" for="inazuma-2">
+                        <img id="inazuma-char-2" src="assets/characters/ayato-logo.webp" alt="ayato">
+                    </label>
+                    <label class="inazuma-char-label" for="inazuma-3">
+                        <img id="inazuma-char-3" src="assets/characters/yoimiya-logo.webp" alt="yoimiya">
+                    </label>
+                    <label class="inazuma-char-label" for="inazuma-4">
+                        <img id="inazuma-char-4" src="assets/characters/yaemiko-logo.webp" alt="yae">
+                    </label>
+                </div>
+            </div>
+                
+            <div class="sumeru-container">
+                <img class="village-background" src="assets/village/sumeru_village.jpeg" alt="">
+                <input type="radio" name= "sumeru-radio" id="sumeru-1">
+                <input type="radio" name= "sumeru-radio" id="sumeru-2">
+                <input type="radio" name= "sumeru-radio" id="sumeru-3">
+                <input type="radio" name= "sumeru-radio" id="sumeru-4">
+                <div class="characters-slides">
+                    <div class="sumeru-characters" id="nahida">
+                        <img class="char-image" src="assets/characters/sumeru-nahida.png">
+                        <div class="char-description">
+                                <div class="char-name">NAHIDA <br> (KUSANALI)</div>
+                                <img class="elements" src="assets/characters/Dendro.png" alt="">
+                                <div class="char-detail">
+                                    She is the vessel of Buer, as Lesser Lord Kusanali, the current 
+                                    Dendro Archon. Having been freed from her extensive confinement 
+                                    in the Sanctuary of Surasthana, she now strives to have a stronger 
+                                    presence in Sumeru.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="sumeru-characters" id="tighnari">
+                        <img class="char-image" src="assets/characters/sumeru-tighnari.png">
+                        <div class="char-description">
+                                <div class="char-name">TIGHNARI</div>
+                                <img class="elements" src="assets/characters/Dendro.png" alt="">
+                                <div class="char-detail">
+                                    A Forest Watcher on profile in Gandharva Ville. 
+                                    Despite his intelligence, he prefers to live a solitary 
+                                    life in the depths of Avidya Forest rather than in the 
+                                    ivory tower of Sumeru Akademiya.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="sumeru-characters" id="alhaitham">
+                        <img class="char-image" src="assets/characters/sumeru-alhaitham.png">
+                        <div class="char-description">
+                                <div class="char-name">ALHAITHAM</div>
+                                <img class="elements" src="assets/characters/Dendro.png" alt="">
+                                <div class="char-detail">
+                                    Alhaitham is a member of the Haravatat of the Sumeru Akademiya 
+                                    and the Akademiya's Scribe, responsible for documenting their 
+                                    findings and drafting ordinances. Despite his brilliance, people 
+                                    within the Akademiya are perplexed by Alhaitham due to his 
+                                    unwillingness to aspire for higher office in spite of his 
+                                    egocentricity, and many have been at odds with him for his 
+                                    uncompromising view on rationality and the truth.
+                                </div>
+                        </div>
+                    </div>
+                    <div class="sumeru-characters" id="wanderer">
+                        <img class="char-image" src="assets/characters/sumeru-wanderer.png">
+                        <div class="char-description">
+                                <div class="char-name">WANDERER</div>
+                                <img class="elements" src="assets/characters/anemo.png" alt="">
+                                <div class="char-detail">
+                                    The Wanderer came into existence in place of his previous incarnation 
+                                    after the latter expunged his previous appellations and their 
+                                    respective histories from Irminsul. Harboring his former 
+                                    self's memories after willingly regaining them, "Wanderer" 
+                                    is now the only title he goes by, for he has no home, kin, 
+                                    or destination.
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="village-char-navigation">
+                    <label class="sumeru-char-label" for="sumeru-1">
+                        <img id="sumeru-char-1" src="assets/characters/nahida-logo.webp" alt="nahida">
+                    </label>
+                    <label class="sumeru-char-label" for="sumeru-2">
+                        <img id="sumeru-char-2" src="assets/characters/tighnari-logo.webp" alt="tighnari">
+                    </label>
+                    <label class="sumeru-char-label" for="sumeru-3">
+                        <img id="sumeru-char-3" src="assets/characters/alhaitham-logo.webp" alt="alhaitham">
+                    </label>
+                    <label class="sumeru-char-label" for="sumeru-4">
+                        <img id="sumeru-char-4" src="assets/characters/wanderer-logo.webp" alt="wanderer">
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="village-navigation">
+            <label for="village-1" class="village-bar" id="vlabel-1">
+                <img src="assets/list-style.png" class="village-list-style">
+                <div class="village-name">Mondstadt</div>            
+            </label>
+            <label for="village-2" class="village-bar" id="vlabel-2">
+                <img src="assets/list-style.png" class="village-list-style">
+                <div class="village-name">Liyue</div>                
+            </label>
+            <label for="village-3" class="village-bar" id="vlabel-3">
+                <img src="assets/list-style.png" class="village-list-style">
+                <div class="village-name">Inazuma</div>                
+            </label>
+            <label for="village-4" class="village-bar" id="vlabel-4">
+                <img src="assets/list-style.png" class="village-list-style">
+                <div class="village-name">Sumeru</div>
+            </label>
+        </div>
+        <div class="nextprev">
+            <img id="prevvillage" src="assets/prev-button.png" alt="">
+            <h1 id="village-icon">VILLAGE</h1>
+            <img id="nextvillage" src="assets/next-button.png" alt="">
+        </div>
+    </div>
+
+    <div class="footer" onclick="hideDownload()">
+		<div class="footer-logo">
+			<img src="assets/Genshin2.png">
+		</div>
+		<div class="social-media">
+			<nav>
+				<li>
+					<a target="_blank" href="https://hoyo.link/59k1BaAd">
+						<img id="ig" src="assets/icon-instagram.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/97k1BRAd">
+						<img id="tw" src="assets/icon-twitter.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/b7k1BCAd">
+						<img id="yt" src="assets/icon-youtube.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/bek1B9Ad	">
+						<img id="dc" src="assets/icon-discord.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/5ek1BZAd">
+						<img id="fb" src="assets/icon-facebook.png" alt="icon">
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="policy">
+			<nav>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/privacy">
+						Privacy policy
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/terms">
+						Terms of service
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">
+						About Us
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="mailto:genshin_cs@hoyoverse.com">
+						Contact Us
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="teen-esrb">
+			<img src="assets/ESRB.png">
+		</div>
+		<div class="hoyoverse-logo">
+			<img src="assets/hoyoverse.png">
+		</div>
+		<div class="copyright">
+			<p></p>
+			<p>
+				Copyright © COGNOSPHERE. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+    <script src="js/characters.js"></script>
+	<script src="js/navmenu.js"></script>
+</body>
+</html>

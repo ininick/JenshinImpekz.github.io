@@ -1,0 +1,124 @@
+
+@media screen and (max-width: 769px) {
+    .background-fs{
+        background-position-x: -50px;
+    }
+    .poster{
+        transform: scale(0.8);
+    }
+    .traveller-msg h1{
+        width:100%;
+        margin-left: 0%;
+    }
+    /*news*/
+    .bg{
+        filter: blur(5px);
+    }
+    .news-heading{
+        margin-top: 150px;
+    }
+    .container{
+        width: 600px;
+        height: 200px;
+    }
+    .desc-detail{
+        display: none;
+    }
+    .description h1{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width : 321px){
+    .background-fs{
+        background-position-x: -50px;
+    }
+    .poster{
+        margin-top: 70%;
+        transform: scale(0.5);
+    }
+    .traveller-msg h1{
+        width:150%;
+        margin-left: -25%;
+    }
+    .poster nav ul{
+        flex-direction: column;
+    }
+    /*news*/
+    .bg{
+        filter: blur(5px);
+    }
+    .news-heading{
+        transform: scale(0.5);
+        margin: 35% 0% 0 35%;
+    }
+    .container{
+        width: 250px;
+        height: fit-content;
+        /* border: 2px solid blue; */
+    }
+    .slides{
+        width: 400%;
+        height: fit-content;
+    }
+    .slide{
+        /* border: solid red; */
+        width: 50%;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .slide img{
+        width: 100%;
+    }
+    .news{
+        width: 100%;
+        transition: 1.5s;
+    }
+    .description{
+        /* border: 2px solid snow; */
+        height: 200px;
+        width: fit-content;
+        top: 0;
+        padding-top: 10px;
+    }
+    .navigation .bar{
+        padding-left: 10px;
+    }
+    .description h1{
+        margin-top: 0px;
+        transform: scale(0.7);
+    }
+    .description h2{
+        margin-top: -20px;
+        transform: scale(0.7);
+    }
+    .desc-detail{
+        display: none;
+    }
+    .navigation{
+        transform: scale(0.4);
+        top: 85%;
+        left: 20%;
+        transform: none;
+
+    }
+    input#image-2:checked ~ .slide img {
+        margin-left: -100%;
+    }
+    input#image-3:checked ~ .slide img {
+        margin-left: -200%;
+    }
+    input#image-4:checked ~ .slide img {
+      margin-left: -300%;
+    }
+    input#image-2:checked ~ .slides .slide .news{
+        margin-left: -100%;
+    }
+    input#image-3:checked ~ .slides .slide .news{
+        margin-left: -200%;
+    }
+    input#image-4:checked ~ .slides .slide .news{
+      margin-left: -300%;
+    }
+        
+}

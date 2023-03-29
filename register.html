@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impekz-Register</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="css/style-header-footer.css">
+	<link rel="stylesheet" href="css/res-header-footer.css">
+    <link rel="stylesheet"href="css/style-register.css">
+	<link rel="stylesheet" href="css/res-register.css">
+</head>
+<body>
+	<!-- ***************************HEADER********************************* -->
+	<div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="assets/Genshin2.png">
+			</a>
+		</div>
+		<div class="navmenu" id="navmenu">
+			<li><a class="navBar" href="index.html">HOME</a></li>
+			<li><a class="navBar" href="index.html#news-id">NEWS</a></li>
+			<li><a class="navBar" href="characters.html">CHARACTERS</a></li>
+			<li class="explore">
+				<a class="navBar" href="GameFeatures.html">EXPLORE</a>
+				<div class="explore-content">
+					<a class="subNavBar" href="GameFeatures.html">Game Features</a>
+					<a class="subNavBar" href="map.html">Map</a>
+				</div>
+			</li>
+		</div>
+		<div class="account">
+			<div  class="login">
+				<div>ACCOUNT</div>
+				<a href="register.html">
+					<img class="login-icon" src="assets/login-profile.png">
+				</a>
+			</div>
+			<div class="account-content">	
+				<a class="subNavBar" target="_blank" href="/register.html">Register</a>
+				<a class="subNavBar" href="/register.html">Log in</a>
+			</div>
+		</div>
+		<button class="button" id="download-btn" onclick = "showDownload()">Download</button>
+		<div class="hamb-icon" id="hamb">
+			<img src="assets/hamb-icon.png" alt="">
+		</div>
+		<div class="download-popup">
+			<img class="close-download" src="assets/close.png" onclick="hideDownload()">
+			<div class="download-contents" onclick="showDownload()">
+				<div class="download-heading">DOWNLOAD</div>
+				<div class="download-type">
+					<img class="qr-download" src="assets/qr-download.png" alt="">
+					<div class="down-1">	
+						<li>
+							<a href="https://www.playstation.com/en-id/games/genshin-impact/">
+								<img src="assets/playstation.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default">
+								<img src="assets/windows.png" alt="">
+							</a>
+						</li>
+					</div>
+					<div class="down-2">
+						<li>
+							<a href="https://apps.apple.com/app/id1517783697">
+								<img src="assets/appstore.png" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact">
+								<img src="assets/googleplay.png" alt="">
+							</a>
+						</li>
+					</div>
+					<a class="epic-games" href="https://www.epicgames.com/store/p/genshin-impact">
+						<img src="assets/epic-games.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- *********************************REGISTER BOX************************ -->
+    <div class="background-fs" onclick="hideDownload()">
+		<div class="bg-img"></div>
+		<div class="slider">
+			<input type="radio" class="radio-box" name="radio" id="for-register">
+			<input type="radio" class="radio-box" name="radio" id="for-login">
+			<div class="slide" id="slides">
+				<div class="register-box" id="reg-box">
+					<form>
+						<h2 id="registration">REGISTER</h2>
+						<label for="username">Username:</label>
+						<input type="text" id="username" name="username" placeholder="Username">
+					  
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" placeholder="Email">
+					  
+						<label for="password">Password:</label>
+						<input type="password" id="password" name="password" placeholder="Password">
+					  
+						<label for="confirm-password">Confirm Password:</label>
+						<input type="password" id="password2" name="password2" placeholder="Confirm Password">
+						
+						<label for="age">Age (in Years):</label>
+						<input type="number" name="age" id="age">
+		
+						<div class="checkbox">
+							<input type="checkbox" name="checkbox" id="terms">
+							I have read and agree to the <a href="https://genshin.hoyoverse.com/en/company/privacy">Terms of Service</a> and <a href="https://genshin.hoyoverse.com/en/company/privacy">Privacy Policy</a>
+						</div>
+		
+						<div class="error-msg" id="error-msg1">
+						</div>
+						<button class="btn-submit" id="btn-register">Register</button>
+
+						<div id="to-login"> Already have account? <label for="for-login" id="login-reg">login</label> now!</div>
+					</form>
+				</div>
+				<div class="login-box" id="log-box">
+					<form>
+						<h2 id="registration">LOGIN</h2>
+						<label for="username">Username:</label>
+						<input type="text" id="usernamelog" name="username" placeholder="Username">
+						
+						<label for="password">Password:</label>
+						<input type="password" id="passwordlog" name="password" placeholder="Password">
+						
+						<label for="confirm-password">Confirm Password:</label>
+						<input type="password" id="password2log" name="confirm-password" placeholder="Confirm Password">
+						<div class="error-msg" id="error-msg2">	
+						</div>
+						<button class="btn-submit" id="btn-login">Login</button>
+						<div id="to-register"> Didn't have account? <label for="for-register" id="register-log">register</label> now!</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- *********************************** FOOTER ******************************************** -->
+    <div class="footer" onclick="hideDownload()">
+		<div class="footer-logo">
+			<img src="assets/Genshin2.png">
+		</div>
+		<div class="social-media">
+			<nav>
+				<li>
+					<a target="_blank" href="https://hoyo.link/59k1BaAd">
+						<img id="ig" src="assets/icon-instagram.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/97k1BRAd">
+						<img id="tw" src="assets/icon-twitter.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/b7k1BCAd">
+						<img id="yt" src="assets/icon-youtube.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/bek1B9Ad	">
+						<img id="dc" src="assets/icon-discord.png" alt="icon">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://hoyo.link/5ek1BZAd">
+						<img id="fb" src="assets/icon-facebook.png" alt="icon">
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="policy">
+			<nav>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/privacy">
+						Privacy policy
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://genshin.hoyoverse.com/en/company/terms">
+						Terms of service
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.hoyoverse.com/en-us/about-us?utm_source=genshin&utm_medium=footer">
+						About Us
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="mailto:genshin_cs@hoyoverse.com">
+						Contact Us
+					</a>
+				</li>
+			</nav>
+		</div>
+		<div class="teen-esrb">
+			<img src="assets/ESRB.png">
+		</div>
+		<div class="hoyoverse-logo">
+			<img src="assets/hoyoverse.png">
+		</div>
+		<div class="copyright">
+			<p></p>
+			<p>
+				Copyright © COGNOSPHERE. All Rights Reserved.
+			</p>
+		</div>
+		
+	</div>
+	<script src="js/download.js"></script>
+	<script src="js/register.js"></script>
+	<script src="js/navmenu.js"></script>
+</body>
+</html>

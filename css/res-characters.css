@@ -1,0 +1,258 @@
+@media screen and (max-width:769px) {
+    .village-navigation{
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        margin-top: -60vh;
+        left: 0;
+    }
+    .mondstadt-container{
+        overflow: hidden;
+    }
+    .liyue-container{
+        overflow: hidden;
+    }
+    .inazuma-container{
+        overflow: hidden;
+    }
+    .sumeru-container{
+        overflow: hidden;
+    }
+    .mondstadt-characters{
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        visibility: hidden;
+        z-index: -1;
+    }
+    .char-image{
+        position: relative;
+        height: 120vh;
+        margin-top: 30px;
+        left: -100px;
+    }
+    #jean .char-image{
+        left: -120px;
+    }
+    #eula .char-image{
+        height: 130vh;
+        margin-top: -30px;
+    }
+    .char-description{
+        transform: scale(0.6);
+        position: absolute;
+        margin: 0;
+        left: 370px;
+    }
+    #eula .char-description{
+        margin: 0;
+        left: 430px;
+    }
+    #diluc .char-description{
+        left: 430px;
+    }
+    #venti .char-detail{
+        width: 350px;
+    }
+    #hutao .char-description{
+        margin: 0;
+        left: 430px;
+    }
+    #zhongli .char-description{
+        left: 480px;
+    }
+    #shenhe .char-description{
+        left: 480px;
+    }
+    #raiden .char-description{
+        left: 390px;        
+    }
+    #ayato .char-description{
+        left: 450px;        
+    }
+    #yoimiya .char-description{
+        left: 330px;        
+    }
+    #nahida .char-description{
+        left: 420px;
+    }
+    #alhaitham .char-description{
+        left: 430px;
+    }
+    #wanderer .char-description{
+        left: 390px;
+    }
+    .char-name{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width : 321px){
+    .nextprev{
+        position: absolute;
+        display: flex;
+        margin-top: -80px;
+        padding: 0px ;
+        z-index: 999;
+        opacity: 0.7;
+    }
+    .nextprev img{
+        padding: 10px 20px;
+    }
+    .nextprev h1{
+        color: rgba(0, 0, 0, 0.4);
+        -webkit-text-stroke: 0.1vh white;
+    }
+    .nextprev #nextvillage{
+        margin-left: 5px;
+    }
+    .nextprev:hover{
+        opacity: 1;
+    }
+    .nextprev img{
+        height: 60px;
+    }
+    .village-navigation{
+        display: none;
+        transform: scale(0.7);
+        margin-top: -320px;
+        left: -30px;
+        background-color: rgba(0, 0, 0, 0.4);
+        height: fit-content;
+        border-radius: 5px;
+    }
+    .village-bar{
+        margin: 5px 5px;
+    }
+        .char-detail{
+        display: none;
+    }
+    
+    .char-image{
+        position: absolute;
+        height: 130vh;
+        top: 80px;
+        left: 0;
+    }   
+    .char-name{
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        font-size: 40px;
+        margin-top: 0vh;
+        margin-left: 0vw;
+        left: -400px;
+        top: 0;
+        font-style: italic;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.1);
+        -webkit-text-stroke: 0.1vh white;
+    }
+    .village-char-navigation{
+        width: 300px;
+        margin: 0;
+        margin-left: 10px;
+        margin-top: -30vh;
+        display: flex;
+        z-index: 100;
+    }
+    #jean{
+        margin-left: -100px;
+    }
+    #eula{
+        margin-left: -170px;
+    }
+    #diluc{
+        margin-left: -170px;
+    }
+    #diluc .char-image{
+        left: 20px;
+    }
+    #venti{
+        margin-left: -110px;
+    }
+    #xiao{
+        margin-left: -130px;
+    }
+    #xiao .char-image{
+        margin-left: -90px;
+    }
+    #hutao{
+        margin-left: -160px;
+    }
+    #hutao .char-name{
+        font-size: 100px;
+    }
+    #zhongli{
+        margin-left: -200px;
+    }
+    #zhongli .char-name{
+        font-size: 50px;
+        transform: scale(1.2);
+    }
+    #zhongli .char-image{
+        margin-left: 0;
+    }
+    #shenhe{
+        margin-left: -200px;
+    }
+    #shenhe .char-image{
+        margin-left: -30px;
+    }
+    #raiden{
+        margin-left: -130px;
+    }
+    #raiden .char-image{
+        margin-left: 0;
+    }
+    #ayato{
+        margin-left: -180px;
+    }
+    #ayato .char-image{
+        margin-left: 10px;
+    }
+    #yoimiya{
+        margin-left: -80px;
+    }
+    #yoimiya .char-image{
+        margin-left: -80px;
+    }
+    #yae{
+        margin-left: -100px;
+    }
+    #yae .char-image{
+        margin-left: -150px;
+    }
+    #nahida{
+        margin-left: -170px;
+    }
+    #nahida .char-image{
+        margin-left: 10px;
+    }
+    #tighnari{
+        margin-left: -170px;
+    }
+    #tighnari .char-name{
+        margin-top: 20px;
+    }
+    #alhaitham{
+        margin-left: -170px;
+    }
+    #alhaitham .char-name{
+        margin-top: 100px;
+    }
+    #alhaitham .char-image{
+        margin-left: -10px;
+    }
+    #wanderer{
+        margin-left: -120px;
+    }
+    #wanderer .char-name{
+        transform: scale(1.2);
+    }
+    #wanderer .char-image{
+        margin-left: -20px;
+    }
+}

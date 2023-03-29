@@ -1,0 +1,195 @@
+@font-face {
+	font-family: myfont;
+	src: url(genshin-font.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+.account .navBar{
+	text-shadow: 
+    0 0 15px #8eceff,
+  0 0 6px #33b9f8,
+  0 0 3px #26b6f9;	
+  
+}
+.background-fs{
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.bg-img{
+    background-image: url(/assets/background3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-position: center;
+    background-size: cover;
+	position: relative;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider{
+    /* border: 2px solid yellowgreen; */
+    margin-top: 35vh;
+    width: 400px;
+    height: fit-content;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 90;
+    overflow: hidden;
+}
+.radio-box{
+    visibility: hidden;
+}
+.slide{
+    /* border: 2px solid brown; */
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+.register-box{
+    margin: 1%;
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: myfont;
+    color: white;
+    transition: 2s;
+}
+.register-box form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: 2s;
+}
+#to-login{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 0;
+    color: snow;
+}
+#login-reg{
+    color: #f4cf4b;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+.login-box{
+    margin: 1%;
+    width: 50%;
+    height: 70%;
+    font-family: myfont;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    transition: 2s;
+}
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: 2s;
+}
+#to-register{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 0;
+    color: snow;
+}
+#register-log{
+    color: #f4cf4b;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: transparent;
+    border: transparent;
+}
+
+
+label {
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    font-size: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    margin-top: 6px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 10px;
+    z-index: 100;
+}
+
+.checkbox{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    align-items: center;
+    color: snow;
+    text-decoration: none;
+}
+.checkbox a{
+    color: #f4cf4b;
+}
+
+.error-msg{
+    padding-top: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: red;
+}
+
+.btn-submit{
+    font-family: myfont;
+    margin-top: 1vh;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: #f4cf4b;
+    color: #1b1b1b;
+    border-radius: 5px;
+    border: none;
+    padding: 5px ;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #937815;
+}
+
+#for-login:checked ~ .slide{
+    margin-left: -100%;
+    transition: 1s;
+}
+#for-register:checked ~ .slide{
+    margin-left: 0%;
+    transition: 1s;
+}
