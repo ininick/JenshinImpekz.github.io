@@ -19,7 +19,7 @@ PENJELASAN PROJECT JENSHIN IMPEKZ KELOMPOK KAMI:
  (Sesuai arahan dari asisten laboratiorium HCI)
 
 4. Untuk project kami, dapat diakses melalui link berikut (sama seperti yang dikumpulkan) :
-   1. Website            : https://ininick.github.io/
+   1. Website            : https://ininick.github.io/JenshinImpekz.github.io
    2. Prototipe (Desain) : https://www.figma.com/file/APR46brkAWwTPwRqr27U5y/JenshinImpekz?node-id=0%3A1&t=TPN0JFBPlLXw7ShC-1
 
 5. Untuk link sumber, kami cantumkan dibawah ini:
